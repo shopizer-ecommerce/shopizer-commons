@@ -6,7 +6,7 @@
 	<name>modules-commons</name>
 	<artifactId>modules-commons</artifactId>
 	<description>Commons classes for modules and external services</description>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<url>http://www.shopizer.com</url>
 
 	<scm>
