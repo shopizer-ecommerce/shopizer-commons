@@ -6,11 +6,11 @@
 	<name>modules-commons</name>
 	<artifactId>modules-commons</artifactId>
 	<description>Commons classes for modules and external services</description>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<url>http://www.shopizer.com</url>
 
 	<scm>
-		<developerConnection>scm:git@github.com:shopizer-ecommerce/shopizer-parent.git</developerConnection>
+		<developerConnection>scm:git@github.com:shopizer-ecommerce/shopizer-commons.git</developerConnection>
 		<url>https://github.com/shopizer-ecommerce/shopizer-commons</url>
 	</scm>
 

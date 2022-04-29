@@ -5,10 +5,11 @@ import java.util.List;
 public interface ModuleStarter {
 	
 	/**
-	 * configuration keys are expected for the module to run
-	 * @return List<String>
+	 * configuration (json serialized to String)
+	 * @return
 	 */
-	public List<String> getConfigurable();
+	public String getConfigurable();
+	public void setConfigurable(String config);
 	/**
 	 * Unique module code
 	 * @return String
@@ -24,7 +25,7 @@ public interface ModuleStarter {
 	public void setSupportedCountry(List<String> supportedCountry);
 	/**
 	 * All country supported by this module
-	 * @return List<String>
+	 * @return
 	 */
 	public List<String> getSupportedCountry();
 	public void setLogo(String logo);
