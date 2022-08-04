@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.shopizer</groupId>
-	<name>modules-commons</name>
-	<artifactId>modules-commons</artifactId>
+	<name>shopizer-commons</name>
+	<artifactId>shopizer-commons</artifactId>
 	<description>Commons classes for modules and external services</description>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<url>http://www.shopizer.com</url>
 
 	<scm>
