@@ -20,7 +20,6 @@ public class SearchConfiguration {
 	
 	
 	
-	
 	public List<String> getMerchants() {
 		return merchants;
 	}
