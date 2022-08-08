@@ -6,8 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class SearchConfiguration {
-	
-	private List<String> merchants = new ArrayList<String>();
+
 	private List<String> languages = new ArrayList<String>();
 	
 	
@@ -20,17 +19,12 @@ public class SearchConfiguration {
 	 * description:text
 	 * ...
 	 */
-	private Map<String,String> mappings = new HashMap<String,String>();
+	private Map<String,String> productMappings = new HashMap<String,String>();
+	private Map<String,String> keywordsMappings = new HashMap<String,String>();
 	private Map<String,String> settings = new HashMap<String,String>();
 	
 	
-	
-	public List<String> getMerchants() {
-		return merchants;
-	}
-	public void setMerchants(List<String> merchants) {
-		this.merchants = merchants;
-	}
+
 	public List<String> getLanguages() {
 		return languages;
 	}
@@ -44,12 +38,6 @@ public class SearchConfiguration {
 	public void setCredentials(Credentials credentials) {
 		this.credentials = credentials;
 	}
-	public Map<String, String> getMappings() {
-		return mappings;
-	}
-	public void setMappings(Map<String, String> mappings) {
-		this.mappings = mappings;
-	}
 	public Map<String, String> getSettings() {
 		return settings;
 	}
@@ -61,6 +49,18 @@ public class SearchConfiguration {
 	}
 	public void setHosts(List<SearchHost> hosts) {
 		this.hosts = hosts;
+	}
+	public Map<String,String> getProductMappings() {
+		return productMappings;
+	}
+	public void setProductMappings(Map<String,String> productMappings) {
+		this.productMappings = productMappings;
+	}
+	public Map<String,String> getKeywordsMappings() {
+		return keywordsMappings;
+	}
+	public void setKeywordsMappings(Map<String,String> keywordsMappings) {
+		this.keywordsMappings = keywordsMappings;
 	}
 
 }
