@@ -1,4 +1,4 @@
-package modules.commons.search;
+package modules.commons.search.configuration;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,10 +11,15 @@ public class SearchConfiguration {
 	private List<String> languages = new ArrayList<String>();
 	
 	
-	private List<String> hosts = new ArrayList<String>();
+	private List<SearchHost> hosts = new ArrayList<SearchHost>();
 	
 	private Credentials credentials = null;
 	
+	/**
+	 * name:text
+	 * description:text
+	 * ...
+	 */
 	private Map<String,String> mappings = new HashMap<String,String>();
 	private Map<String,String> settings = new HashMap<String,String>();
 	
@@ -32,12 +37,7 @@ public class SearchConfiguration {
 	public void setLanguages(List<String> languages) {
 		this.languages = languages;
 	}
-	public List<String> getHosts() {
-		return hosts;
-	}
-	public void setHosts(List<String> hosts) {
-		this.hosts = hosts;
-	}
+
 	public Credentials getCredentials() {
 		return credentials;
 	}
@@ -55,6 +55,12 @@ public class SearchConfiguration {
 	}
 	public void setSettings(Map<String, String> settings) {
 		this.settings = settings;
+	}
+	public List<SearchHost> getHosts() {
+		return hosts;
+	}
+	public void setHosts(List<SearchHost> hosts) {
+		this.hosts = hosts;
 	}
 
 }

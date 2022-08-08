@@ -1,4 +1,4 @@
-package modules.commons.search;
+package modules.commons.search.request;
 
 import java.util.List;
 
@@ -15,19 +15,18 @@ import java.util.List;
 
 public class SearchRequest {
 	
-	
 	private String searchString;
-	private List<String> filters;
+	private List<SearchFilter> filters;
 	public String getSearchString() {
 		return searchString;
 	}
 	public void setSearchString(String searchString) {
 		this.searchString = searchString;
 	}
-	public List<String> getFilters() {
+	public List<SearchFilter> getFilters() {
 		return filters;
 	}
-	public void setFilters(List<String> filters) {
+	public void setFilters(List<SearchFilter> filters) {
 		this.filters = filters;
 	}
 	

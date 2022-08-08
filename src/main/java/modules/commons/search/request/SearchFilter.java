@@ -1,4 +1,4 @@
-package modules.commons.search;
+package modules.commons.search.request;
 
 public class SearchFilter {
 	

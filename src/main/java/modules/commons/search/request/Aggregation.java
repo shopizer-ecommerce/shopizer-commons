@@ -1,27 +1,27 @@
-package modules.commons.search;
+package modules.commons.search.request;
 
-public class SearchItem {
+public class Aggregation {
 	
 	private String name;
-	private Long id;
 	private String sku;
+	private int count;
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
 	public String getSku() {
 		return sku;
 	}
 	public void setSku(String sku) {
 		this.sku = sku;
+	}
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
 	}
 
 }
