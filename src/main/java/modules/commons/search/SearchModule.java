@@ -22,5 +22,6 @@ public interface SearchModule {
 	
 	String getUniqueCode();
 	
-	SearchResponse searchKeyword(SearchRequest searchRequest) throws Exception;
+	SearchResponse searchKeywords(SearchRequest searchRequest) throws Exception;
+	SearchResponse searchProducts(SearchRequest searchRequest) throws Exception;
 }
