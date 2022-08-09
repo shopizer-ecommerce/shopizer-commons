@@ -15,6 +15,9 @@ import java.util.List;
 
 public class SearchRequest {
 	
+	private String store;
+	private String language;
+	
 	private String searchString;
 	private List<SearchFilter> filters;
 	public String getSearchString() {
@@ -28,6 +31,18 @@ public class SearchRequest {
 	}
 	public void setFilters(List<SearchFilter> filters) {
 		this.filters = filters;
+	}
+	public String getStore() {
+		return store;
+	}
+	public void setStore(String store) {
+		this.store = store;
+	}
+	public String getLanguage() {
+		return language;
+	}
+	public void setLanguage(String language) {
+		this.language = language;
 	}
 	
 	
