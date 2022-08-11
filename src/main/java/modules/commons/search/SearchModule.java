@@ -18,6 +18,13 @@ public interface SearchModule {
 	void index(IndexItem item) throws Exception;
 	void index(List<IndexItem> item) throws Exception;
 	
+	/**
+	 * Index having description (language)
+	 * Document id
+	 * @param languages
+	 * @param id
+	 * @throws Exception
+	 */
 	void delete(List<String> languages, Long id) throws Exception;
 	
 	String getUniqueCode();

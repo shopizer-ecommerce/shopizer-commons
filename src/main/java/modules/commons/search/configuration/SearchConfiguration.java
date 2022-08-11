@@ -8,6 +8,7 @@ import java.util.Map;
 public class SearchConfiguration {
 
 	private List<String> languages = new ArrayList<String>();
+	private String clusterName;
 	
 	
 	private List<SearchHost> hosts = new ArrayList<SearchHost>();
@@ -61,6 +62,12 @@ public class SearchConfiguration {
 	}
 	public void setKeywordsMappings(Map<String,String> keywordsMappings) {
 		this.keywordsMappings = keywordsMappings;
+	}
+	public String getClusterName() {
+		return clusterName;
+	}
+	public void setClusterName(String clusterName) {
+		this.clusterName = clusterName;
 	}
 
 }
