@@ -10,6 +10,11 @@ public class SearchConfiguration {
 	private List<String> languages = new ArrayList<String>();
 	private String clusterName;
 	
+	/**
+	 * When using a test ssl certficate
+	 */
+	private String jksAbsolutePath;
+	
 	
 	private List<SearchHost> hosts = new ArrayList<SearchHost>();
 	
@@ -68,6 +73,12 @@ public class SearchConfiguration {
 	}
 	public void setClusterName(String clusterName) {
 		this.clusterName = clusterName;
+	}
+	public String getJksAbsolutePath() {
+		return jksAbsolutePath;
+	}
+	public void setJksAbsolutePath(String jksAbsolutePath) {
+		this.jksAbsolutePath = jksAbsolutePath;
 	}
 
 }
