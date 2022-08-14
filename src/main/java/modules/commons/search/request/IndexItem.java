@@ -20,7 +20,7 @@ public class IndexItem implements Serializable {
 	private String description;
 	private String brand;
 	private String category;
-	private List<IndexItemVariant> variants; //[{size:S,color:white},{...}] //flattern
+	private List<Map<String,String>> variants; //[{size:S,color:white},{...}] //flattern
 	//List
 		//variant Map<key,value> -> size:small
 	    //variant Map<key,value> -> color:white
@@ -111,20 +111,20 @@ public class IndexItem implements Serializable {
 		return serialVersionUID;
 	}
 
-	public List<IndexItemVariant> getVariants() {
-		return variants;
-	}
-
-	public void setVariants(List<IndexItemVariant> variants) {
-		this.variants = variants;
-	}
-
 	public Map<String, String> getAttributes() {
 		return attributes;
 	}
 
 	public void setAttributes(Map<String, String> attributes) {
 		this.attributes = attributes;
+	}
+
+	public List<Map<String,String>> getVariants() {
+		return variants;
+	}
+
+	public void setVariants(List<Map<String,String>> variants) {
+		this.variants = variants;
 	}
 	
 
