@@ -1,6 +1,8 @@
 package modules.commons.search.request;
 
 import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Fileds to be insterted
@@ -18,8 +20,14 @@ public class IndexItem implements Serializable {
 	private String description;
 	private String brand;
 	private String category;
-	private String variants; //[{size:S,color:white},{...}] //flattern
-	private String attributes; //flattern
+	private List<IndexItemVariant> variants; //[{size:S,color:white},{...}] //flattern
+	//List
+		//variant Map<key,value> -> size:small
+	    //variant Map<key,value> -> color:white
+	//List
+	private Map<String, String> attributes; //flattern
+	//maximumLength:300
+	//minimumLength:50
 	private String price;
 	private Long id;
 	
@@ -73,21 +81,7 @@ public class IndexItem implements Serializable {
 		this.category = category;
 	}
 
-	public String getVariants() {
-		return variants;
-	}
 
-	public void setVariants(String variants) {
-		this.variants = variants;
-	}
-
-	public String getAttributes() {
-		return attributes;
-	}
-
-	public void setAttributes(String attributes) {
-		this.attributes = attributes;
-	}
 
 	public String getPrice() {
 		return price;
@@ -115,6 +109,22 @@ public class IndexItem implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+	public List<IndexItemVariant> getVariants() {
+		return variants;
+	}
+
+	public void setVariants(List<IndexItemVariant> variants) {
+		this.variants = variants;
+	}
+
+	public Map<String, String> getAttributes() {
+		return attributes;
+	}
+
+	public void setAttributes(Map<String, String> attributes) {
+		this.attributes = attributes;
 	}
 	
 
