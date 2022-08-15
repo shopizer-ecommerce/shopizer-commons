@@ -19,6 +19,8 @@ public class SearchRequest {
 	private String language;
 	
 	private String searchString;
+	
+	
 	private List<SearchFilter> filters;
 	public String getSearchString() {
 		return searchString;
