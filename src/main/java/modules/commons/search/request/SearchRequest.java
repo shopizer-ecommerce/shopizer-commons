@@ -22,6 +22,10 @@ public class SearchRequest {
 	
 	
 	private List<SearchFilter> filters;
+	
+	private List<String> aggregations;
+	
+	
 	public String getSearchString() {
 		return searchString;
 	}
@@ -45,6 +49,12 @@ public class SearchRequest {
 	}
 	public void setLanguage(String language) {
 		this.language = language;
+	}
+	public List<String> getAggregations() {
+		return aggregations;
+	}
+	public void setAggregations(List<String> aggregations) {
+		this.aggregations = aggregations;
 	}
 	
 	
