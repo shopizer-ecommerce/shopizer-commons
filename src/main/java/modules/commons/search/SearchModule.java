@@ -27,8 +27,14 @@ public interface SearchModule {
 	 */
 	void delete(List<String> languages, Long id) throws Exception;
 	
+	/**
+	 * Search module code
+	 * @return
+	 */
 	String getUniqueCode();
 	
 	SearchResponse searchKeywords(SearchRequest searchRequest) throws Exception;
 	SearchResponse searchProducts(SearchRequest searchRequest) throws Exception;
+	
+	Object getConnection();
 }
