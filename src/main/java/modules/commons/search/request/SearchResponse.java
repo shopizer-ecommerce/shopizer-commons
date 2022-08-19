@@ -6,17 +6,12 @@ import java.util.List;
 public class SearchResponse {
 	
 
-	private int count;
+	private Long count;
 	private int page;
 	private int start;
 	private List<SearchItem> items = new ArrayList<SearchItem>();
 	private List<Aggregation> aggregations = new ArrayList<Aggregation>();
-	public int getCount() {
-		return count;
-	}
-	public void setCount(int count) {
-		this.count = count;
-	}
+
 	public int getPage() {
 		return page;
 	}
@@ -40,6 +35,12 @@ public class SearchResponse {
 	}
 	public void setAggregations(List<Aggregation> aggregations) {
 		this.aggregations = aggregations;
+	}
+	public Long getCount() {
+		return count;
+	}
+	public void setCount(Long count) {
+		this.count = count;
 	}
 
 }
