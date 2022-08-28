@@ -3,6 +3,7 @@ package modules.commons.search;
 import java.util.List;
 
 import modules.commons.search.configuration.SearchConfiguration;
+import modules.commons.search.request.Document;
 import modules.commons.search.request.IndexItem;
 import modules.commons.search.request.SearchRequest;
 import modules.commons.search.request.SearchResponse;
@@ -35,6 +36,8 @@ public interface SearchModule {
 	
 	SearchResponse searchKeywords(SearchRequest searchRequest) throws Exception;
 	SearchResponse searchProducts(SearchRequest searchRequest) throws Exception;
+	
+	Document getDocument(Long id) throws Exception;
 	
 	Object getConnection();
 }
