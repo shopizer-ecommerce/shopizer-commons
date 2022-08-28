@@ -37,7 +37,24 @@ public interface SearchModule {
 	SearchResponse searchKeywords(SearchRequest searchRequest) throws Exception;
 	SearchResponse searchProducts(SearchRequest searchRequest) throws Exception;
 	
-	Document getDocument(Long id) throws Exception;
+	
+	/**
+	 * Get Document for a specific language
+	 * @param id
+	 * @param language
+	 * @return
+	 * @throws Exception
+	 */
+	Document getDocument(Long id, String language) throws Exception;
+	
+	/**
+	 * Get document id for differet languases
+	 * @param id
+	 * @param languages
+	 * @return
+	 * @throws Exception
+	 */
+	List<Document> getDocument(Long id, List<String> languages) throws Exception;
 	
 	Object getConnection();
 }
