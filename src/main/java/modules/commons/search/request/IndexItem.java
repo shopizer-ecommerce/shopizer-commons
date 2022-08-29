@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Fileds to be insterted
+ * Fields to be inserted
  * @author carlsamson
  *
  */
@@ -18,6 +18,8 @@ public class IndexItem implements Serializable {
 	
 	private String name;
 	private String description;
+	private String image;
+	private boolean addToCart = true;
 	private String brand;
 	private String category;
 	private List<Map<String,String>> variants; //[{size:S,color:white},{...}] //flattern
@@ -125,6 +127,22 @@ public class IndexItem implements Serializable {
 
 	public void setVariants(List<Map<String,String>> variants) {
 		this.variants = variants;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public boolean isAddToCart() {
+		return addToCart;
+	}
+
+	public void setAddToCart(boolean addToCart) {
+		this.addToCart = addToCart;
 	}
 	
 
