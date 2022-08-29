@@ -5,6 +5,7 @@ import java.util.List;
 import modules.commons.search.configuration.SearchConfiguration;
 import modules.commons.search.request.Document;
 import modules.commons.search.request.IndexItem;
+import modules.commons.search.request.RequestOptions;
 import modules.commons.search.request.SearchRequest;
 import modules.commons.search.request.SearchResponse;
 
@@ -45,7 +46,7 @@ public interface SearchModule {
 	 * @return
 	 * @throws Exception
 	 */
-	Document getDocument(Long id, String language) throws Exception;
+	Document getDocument(Long id, String language, RequestOptions option) throws Exception;
 	
 	/**
 	 * Get document id for differet languases
@@ -54,7 +55,7 @@ public interface SearchModule {
 	 * @return
 	 * @throws Exception
 	 */
-	List<Document> getDocument(Long id, List<String> languages) throws Exception;
+	List<Document> getDocument(Long id, List<String> languages, RequestOptions option) throws Exception;
 	
 	Object getConnection();
 }
