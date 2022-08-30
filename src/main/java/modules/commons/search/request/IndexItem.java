@@ -22,13 +22,14 @@ public class IndexItem implements Serializable {
 	private boolean addToCart = true;
 	private String brand;
 	private String category;
-	private List<List<Map<String,String>>> variants; //[{size:S,color:white},{...}] //flattern
-	//List
+	private List<Map<String,String>> variants; //[{size:S,color:white},{...}] //flattern
+
 		//List
+			//Map
 			//variant Map<key,value> -> size:small
 	    	//variant Map<key,value> -> color:white
-		//List
-	private List<Map<String, String>> attributes; //flattern
+			//Map
+	private Map<String, String> attributes; //flattern
 	//maximumLength:300
 	//minimumLength:50
 	private String price;
@@ -131,21 +132,23 @@ public class IndexItem implements Serializable {
 		this.addToCart = addToCart;
 	}
 
-	public List<Map<String, String>> getAttributes() {
-		return attributes;
-	}
-
-	public void setAttributes(List<Map<String, String>> attributes) {
-		this.attributes = attributes;
-	}
-
-	public List<List<Map<String,String>>> getVariants() {
+	public List<Map<String,String>> getVariants() {
 		return variants;
 	}
 
-	public void setVariants(List<List<Map<String,String>>> variants) {
+	public void setVariants(List<Map<String,String>> variants) {
 		this.variants = variants;
 	}
+
+	public Map<String, String> getAttributes() {
+		return attributes;
+	}
+
+	public void setAttributes(Map<String, String> attributes) {
+		this.attributes = attributes;
+	}
+
+
 	
 
 }
